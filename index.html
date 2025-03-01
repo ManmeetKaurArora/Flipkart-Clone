@@ -5,133 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipkart Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flipkart.css">
 </head>
 
 <body>
-    <nav id="main">
-        <div id="img">
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-                width="160" height="40" title="Flipkart" alt="">
 
-
-            <input type="text" placeholder="Search for Products, Brands and More " id="s">
-            <div id="login">
-                Login
-                <div id="c">
-                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
-                        alt="Login" class="-dOa_b L_FVxe" width="24" height="24">
-                </div>
-            </div>
-            <div id="cart">
-                Cart
-            </div>
-            <div id="img cart">
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
-                    alt="Cart" class="_1XmrCc" width="24" height="24" id="i">
-
-            </div>
-            <div id="become">
-                Become a Seller
-            </div>
-            <div id="img become">
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-                    alt="Become a Seller" class="_1XmrCc" id="h">
-            </div>
-            <div>
-                <img class="-dOa_b"
-                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
-                    width="24" height="24" alt="Dropdown with more help links" id="dot">
+    <!-- HEADER -->
+    <header>
+        <nav id="main">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                    width="160" height="40" alt="Flipkart Logo">
             </div>
 
+            <!-- SEARCH BAR -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search for Products, Brands and More">
+                <button class="search-btn">🔍</button>
+            </div>
 
+            <!-- NAV LINKS -->
+            <div class="nav-links">
+                <a href="#" class="nav-item">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" width="24" height="24" alt="">
+                    Login
+                </a>
+
+                <a href="#" class="nav-item">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" width="24" height="24" alt="">
+                    Cart
+                </a>
+
+                <a href="#" class="nav-item">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" width="24" height="24" alt="">
+                    Become a Seller
+                </a>
+
+                <a href="#" class="nav-item">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" width="24" height="24" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CATEGORY SECTION -->
+    <section class="category-container">
+        <div class="category-item">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="Grocery">
+            <p>Grocery</p>
         </div>
-    </nav>
-    <section>
-        <div id="alag">
-            <div id="grocery">
-                <img class="_2puWtW _3a3qyb" alt="Grocery"
-                    src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" id="gro">
 
-                <div id="Grocery"> Grocery </div>
-            </div>
+        <div class="category-item">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" alt="Mobiles">
+            <p>Mobiles</p>
+        </div>
 
-            <div id="mobiles">
-                <img class="_2puWtW _3a3qyb" alt="Mobiles"
-                    src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" id="mob">
+        <div class="category-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" alt="Fashion">
+            <p>Fashion</p>
+        </div>
 
-                <div id="Mobiles"> Mobiles </div>
-            </div>
+        <div class="category-item">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" alt="Electronics">
+            <p>Electronics</p>
+        </div>
 
-            <div id="fashion">
-                <img class="_2puWtW _3a3qyb" alt="Fashion"
-                    src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" id="fash">
+        <div class="category-item">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100" alt="Home & Furniture">
+            <p>Home & Furniture</p>
+        </div>
 
-                <div id="Fashion"> Fashion </div>
-            </div>
+        <div class="category-item">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100" alt="Appliances">
+            <p>Appliances</p>
+        </div>
 
-            <div id="electronics">
-                <img class="_2puWtW _3a3qyb" alt="Electronics"
-                    src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" id="elec">
+        <div class="category-item">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100" alt="Travel">
+            <p>Travel</p>
+        </div>
 
-                <div id="Electronics"> Electronics </div>
-            </div>
+        <div class="category-item">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100" alt="Beauty, Toys & More">
+            <p>Beauty, Toys & More</p>
+        </div>
 
-
-            <div id="homefurniture">
-                <img class="_2puWtW _3a3qyb" alt="Home &amp; Furniture"
-                    src="https://rukminim1.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100" id="hf">
-
-                <div id="Homefurniture"> Home & furniture </div>
-            </div>
-
-            <div id="appliances">
-                <img class="_2puWtW _3a3qyb" alt="Appliances"
-                    src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100" id="app">
-
-                <div id="Appliances"> Appliances </div>
-            </div>
-
-            <div id="travel">
-                <img class="_2puWtW _3a3qyb" alt="Travel"
-                    src="https://rukminim1.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100" id="trav">
-
-                <div id="Travel"> Travel </div>
-            </div>
-
-            <div id="beauty">
-                <img class="_2puWtW _3a3qyb" alt="Beauty, Toys &amp; More"
-                    src="https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100" id="beau">
-
-                <div id="Beauty"> Beauty, Toys & More </div>
-            </div>
-
-            <div id="two">
-                <img class="_2puWtW _3a3qyb" alt="Two Wheelers"
-                    src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100" id="tw">
-
-                <div id="Two"> Two Wheelers </div>
-            </div>
+        <div class="category-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100" alt="Two Wheelers">
+            <p>Two Wheelers</p>
         </div>
     </section>
 
+    <!-- BANNER -->
+    <section class="banner">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/345037032e3daaaf.jpg?q=20" alt="Promotional Banner">
+    </section>
 
-        <div>
-            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/345037032e3daaaf.jpg?q=20" alt="Image"
-                id="im">
-        </div>
-
-<section>
-    <div id="best">
-        <h2>Best of Electronics </h2>
-        <div id="watches">
-           <img id="watch" src="https://rukminim1.flixcart.com/flap/210/210/image/24ed491dc3ff9e8a.jpg?q=80" alt=""> 
-           <div id="noise">Noise Smartwatches</div>
-           <div id="p"> <b>From rs. 1099/- </b></div>
-        </div>
-        
-    </div>
-</section>
+    <!-- BEST OF ELECTRONICS SECTION -->
+    <section class="best-electronics">
+        <h2>Best of Electronics</h2>
+        <article class="product">
+            <img src="https://rukminim1.flixcart.com/flap/210/210/image/24ed491dc3ff9e8a.jpg?q=80" alt="Noise Smartwatch">
+            <h3>Noise Smartwatches</h3>
+            <p><strong>From ₹1099/-</strong></p>
+        </article>
+    </section>
 
 </body>
 
