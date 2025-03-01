@@ -1,216 +1,236 @@
-body{
-    background-color: rgb(181, 176, 176);
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-#main{
-    background-color: aliceblue;
-    height: 68px;
-}
-#img{
-    display: inline-block;
-    margin-top: 15px;
-    position: absolute;
-}
-#s{
-    display: inline-block;
-    width: 700px;
-    background-color: rgb(195 222 239);
-    margin-left: 30px;                            
-    margin-top: 1px;
-    font-size: 24px;
-    border-radius: 9px;
-    position: absolute;
-    border-color: rgb(195 222 239);
-    border-width: 2px;
-    color: black;
-}
-#login{
-    display: inline-block;
-    position: absolute;
-    margin-left: 810px;
-    margin-top: 4px;
-    font-size: 23px;
-}
-#c{
-    position: absolute;
-    margin-left: -32px;
-    margin-top: -25px;
-}
-#cart{
-    position: absolute;
-    display: inline-block;
-    margin-left: 955px;
-    margin-top: 6px;
-    font-size: 23px;
-}
-#img cart{
-    position: absolute;
-    display: inline-block;
-}
-#i{
-    margin-left: 1088px;
-    margin-top: -36px;
-    position: absolute;
-}
-#become{
-    position: absolute;
-    display: inline-block;
-    margin-left: 1235px;
-    margin-top: -38px;
-    font-size: 23px;
-    width: 172px;
-}
-#img become{
-    position: absolute;
-    display: inline-block;
-}
-#h{
-    margin-left: 1205px;
-    margin-top: -36px;
-    position: absolute; 
 
+body {
+    background-color: #f1f3f6;
 }
-#dot{
-    position: absolute;
-    display: inline-block;
-    margin-left: 1434px;
-    margin-top: -34px;
-}
-#alag{
+
+/* Navbar */
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
-    height: 117px;
-    margin-top: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-#grocery{
-    display: inline-block;
-    margin-left: 61px;
+
+/* Logo */
+.logo img {
+    width: 160px;
 }
-#Grocery{
-    margin-top: -9px;
-    margin-left: 25px;
-    font-weight: 700;
+
+/* Search Bar */
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 20px;
 }
-#gro{
-    margin-left: 13px;
-    margin-top: -2px;
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
 }
-#mobiles{
-    display: inline-block;
-    margin-left: 61px;
+
+.search-btn {
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
-#Mobiles{
-    margin-top: -9px;
-    margin-left: -10px;
-    font-weight: 700;
+
+.search-btn:hover {
+    background-color: #1a5bbf;
 }
-#mob{
-    margin-left: -24px;
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
-#fashion{
-    display: inline-block;
-    margin-left: 61px;
-}
-#Fashion{
-    margin-top: 0px;
-    margin-left: -10px;
-    font-weight: 700;
-}
-#fash{
-    margin-left: -24px;
-}
-#electronics{
-    display: inline-block;
-    margin-left: 61px;
-}
-#Electronics{
-    margin-top: -9px;
-    margin-left: -10px;
-    font-weight: 700;
-}
-#elec{
-    margin-left: -11px;
-}
-#homefurniture{
-    display: inline-block;
-    margin-left: 61px;
-}
-#Homefurniture{
-    margin-top: -9px;
-    margin-left: -10px;
-    font-weight: 700;
-}
-#hf{
-    margin-left: 8px;
-}#appliances{
-    display: inline-block;
-    margin-left: 61px;
-}
-#Appliances{
-    margin-top: -2px;
-    margin-left: -17px;
-    font-weight: 700;
-}
-#app{
-    margin-left: -18px;
-}#travel{
-    display: inline-block;
-    margin-left: 61px;
-}
-#Travel{
-    margin-top: 1px;
-    margin-left: -10px;
-    font-weight: 700;
-}
-#trav{
-    margin-left:-29px;
-}
-#beauty{
-    display: inline-block;
-    margin-left: 61px;
-}
-#Beauty{
-    margin-top: -2px;
-    margin-left: -17px;
-    font-weight: 700;
-}
-#beau{
-    margin-left: 11px;
-}
-#two{
-    display: inline-block;
-    margin-left: 61px;
-}
-#Two{
-    margin-top: 1px;
-    margin-left: -25px;
-    font-weight: 700;
-}
-#tw{
-    margin-left:-15px;
-}
-#im{
-    width: 99vw;
-    height: 260px;
-    margin-top: 20px;
-}
-#best{
-    height: 400px;
-    background-color: white;
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
     color: black;
-    margin-top: 20px;
+    font-size: 14px;
 }
-h2{
-    display: inline-block;
-    margin-left: 20px;
-    margin-top: 20px;
+
+.nav-item img {
+    margin-right: 5px;
 }
-#watch{
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 20px;
+
+/* Category Section */
+.category-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px 0;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
-#noise{
-    display: inline-block;
+
+.category-item {
+    text-align: center;
+    width: 100px;
+    transition: transform 0.2s ease-in-out;
 }
-#p{
+
+.category-item:hover {
+    transform: scale(1.1);
+}
+
+.category-item img {
+    width: 64px;
+    height: 64px;
+}
+
+.category-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Banner Section */
+.banner {
+    margin: 20px 0;
+}
+
+.banner img {
+    width: 100%;
     display: block;
+}
+
+/* Best of Electronics Section */
+.best-electronics {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.best-electronics h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 120px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .search-bar {
+        max-width: 400px;
+    }
+
+    .category-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-item {
+        width: 80px;
+    }
+
+    .category-item img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
+
+    .category-container {
+        flex-wrap: wrap;
+    }
+
+    .category-item {
+        width: 70px;
+    }
+
+    .product img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-item {
+        width: 60px;
+    }
+
+    .category-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .product img {
+        width: 90px;
+    }
+
+    .best-electronics {
+        margin: 10px;
+    }
 }
